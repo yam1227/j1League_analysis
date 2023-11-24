@@ -28,3 +28,10 @@
 ## scraping
 [FootballLab](https://www.football-lab.jp/summary/team_style/j1/?year=2023)よりALL Styleの指数一覧のみ取得。  
 各パラメータと、チーム名のリンクからhrefを取得し、その遷移先から、チームの英名を取得。
+
+## 起動方法
+1. [RapidAPI](https://rapidapi.com/hub)のアカウントを作成して、キーを取得する。
+2. api_get_codeの配下のapi取得コード中のX-RapidAPI-Keyの要素部分xxxxを取得したキーに変更して、csv形式としてデータを取得する(gamedata_for_id.ipynb→team_statistics.ipynbの順で実装する)
+3. api_data配下に新規のcsvファイルが作成されていることを確認する
+4. form_another_game.ipynbを実装する
+5. analytics配下のglm_poisson.ipynbを起動して結果を確認する
